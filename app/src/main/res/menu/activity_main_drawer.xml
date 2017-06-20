@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_beranda"
+            android:icon="@mipmap/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_makanan"
+            android:icon="@mipmap/gallery"
+            android:title="Gallery" />
+        <item
+            android:id="@+id/nav_minuman"
+            android:icon="@mipmap/price"
+            android:title="Size and Price" />
+        <item
+            android:id="@+id/nav_Order"
+            android:icon="@mipmap/shop"
+            android:title="Order" />
+    </group>
+
+    <item android:title="Detail and Contact US">
+        <menu>
+            <item
+                android:id="@+id/nav_site"
+                android:icon="@mipmap/website"
+                android:title="Website" />
+        </menu>
+    </item>
+
+</menu>
