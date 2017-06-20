@@ -6,15 +6,15 @@
         <item
             android:id="@+id/nav_beranda"
             android:icon="@mipmap/home"
-            android:title="Home" />
+            android:title="Beranda" />
         <item
             android:id="@+id/nav_makanan"
             android:icon="@mipmap/gallery"
-            android:title="Gallery" />
+            android:title="Makanan" />
         <item
             android:id="@+id/nav_minuman"
             android:icon="@mipmap/price"
-            android:title="Size and Price" />
+            android:title="Minuman" />
         <item
             android:id="@+id/nav_Order"
             android:icon="@mipmap/shop"
