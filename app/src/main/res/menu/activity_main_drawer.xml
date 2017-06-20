@@ -9,7 +9,7 @@
             android:title="Beranda" />
         <item
             android:id="@+id/nav_makanan"
-            android:icon="@mipmap/gallery"
+            android:icon="@mipmap/food2"
             android:title="Makanan" />
         <item
             android:id="@+id/nav_minuman"
@@ -21,7 +21,7 @@
             android:title="Order" />
     </group>
 
-    <item android:title="Detail and Contact US">
+    <item android:title="Detail and Contact Us">
         <menu>
             <item
                 android:id="@+id/nav_site"

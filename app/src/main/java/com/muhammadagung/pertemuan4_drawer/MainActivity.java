@@ -92,6 +92,9 @@ public class MainActivity extends AppCompatActivity
 
         switch (id){
             case  nav_beranda:
+                break;
+
+            case nav_makanan:
                 makanan makananFragment = new makanan();
                 android.support.v4.app.FragmentTransaction fragmentTransaction1 =
                         getSupportFragmentManager().beginTransaction();
@@ -100,17 +103,8 @@ public class MainActivity extends AppCompatActivity
                 getSupportActionBar().setTitle("Daftar Makanan");
                 break;
 
-            case nav_makanan:
-                minuman minumanFragment = new minuman();
-                android.support.v4.app.FragmentTransaction fragmentTransaction2 =
-                        getSupportFragmentManager().beginTransaction();
-                fragmentTransaction2.replace(R.id.FrameLayout, minumanFragment);
-                fragmentTransaction2.commit();
-                getSupportActionBar().setTitle("Daftar Minuman");
-                break;
-
             case nav_minuman:
-                Toast.makeText(MainActivity.this, "Size and Price", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "minuman", Toast.LENGTH_SHORT).show();
                 break;
 
             case nav_Order:
