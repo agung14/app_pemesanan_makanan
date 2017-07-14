@@ -13,7 +13,7 @@
             android:title="Makanan" />
         <item
             android:id="@+id/nav_minuman"
-            android:icon="@mipmap/price"
+            android:icon="@mipmap/drink"
             android:title="Minuman" />
         <item
             android:id="@+id/nav_Order"

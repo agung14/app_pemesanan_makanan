@@ -50,6 +50,13 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         navigationView.setItemIconTintList(null);
+
+        Beranda berandaFragment = new Beranda();
+        android.support.v4.app.FragmentTransaction fragmentTransaction1 =
+                getSupportFragmentManager().beginTransaction();
+        fragmentTransaction1.replace(R.id.FrameLayout, berandaFragment);
+        fragmentTransaction1.commit();
+        getSupportActionBar().setTitle("Beranda");
     }
 
     @Override
@@ -92,18 +99,30 @@ public class MainActivity extends AppCompatActivity
 
         switch (id){
             case  nav_beranda:
+                Beranda berandaFragment = new Beranda();
+                android.support.v4.app.FragmentTransaction fragmentTransaction1 =
+                        getSupportFragmentManager().beginTransaction();
+                fragmentTransaction1.replace(R.id.FrameLayout, berandaFragment);
+                fragmentTransaction1.commit();
+                getSupportActionBar().setTitle("Beranda");
                 break;
 
             case nav_makanan:
                 makanan makananFragment = new makanan();
-                android.support.v4.app.FragmentTransaction fragmentTransaction1 =
+                android.support.v4.app.FragmentTransaction fragmentTransaction2 =
                         getSupportFragmentManager().beginTransaction();
-                fragmentTransaction1.replace(R.id.FrameLayout, makananFragment);
-                fragmentTransaction1.commit();
+                fragmentTransaction2.replace(R.id.FrameLayout, makananFragment);
+                fragmentTransaction2.commit();
                 getSupportActionBar().setTitle("Daftar Makanan");
                 break;
 
             case nav_minuman:
+                minuman minumanFragment = new minuman();
+                android.support.v4.app.FragmentTransaction fragmentTransaction3 =
+                        getSupportFragmentManager().beginTransaction();
+                fragmentTransaction3.replace(R.id.FrameLayout, minumanFragment);
+                fragmentTransaction3.commit();
+                getSupportActionBar().setTitle("Daftar Minuman");
                 Toast.makeText(MainActivity.this, "minuman", Toast.LENGTH_SHORT).show();
                 break;
 
