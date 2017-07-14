@@ -53,11 +53,11 @@ public class recycler_makanan_adapter extends RecyclerView.Adapter<recycler_maka
         public void onClick(View v) {
             //clickListener.onClick(v, getLayoutPosition());
             Intent intent = new Intent(context, DetailMenu.class);
-            context.startActivity(intent);
 
             intent.putExtra("judul", txt_Nama.getText());
             intent.putExtra("harga", txt_Harga.getText());
             context.startActivity(intent);
+
         }
     }
 

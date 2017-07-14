@@ -26,9 +26,12 @@
         <activity
             android:name=".ServerActivity"
             android:label="Setting"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity">
 
-        <activity android:name=".DetailMenu">
+        </activity>
+
+        <activity android:name=".DetailMenu"
+            android:parentActivityName=".DetailMenu">
 
         </activity>
 
