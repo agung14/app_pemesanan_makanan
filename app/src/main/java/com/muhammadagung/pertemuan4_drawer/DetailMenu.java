@@ -17,7 +17,6 @@ public class DetailMenu extends AppCompatActivity {
         judul = (TextView) findViewById(R.id.txtJudul);
         harga = (TextView) findViewById(R.id.txtHarga2);
 
-
         Intent intent = getIntent();
         judul.setText(intent.getStringExtra("judul"));
         harga.setText(intent.getStringExtra("harga"));

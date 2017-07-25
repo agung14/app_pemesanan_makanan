@@ -2,6 +2,7 @@ package com.muhammadagung.pertemuan4_drawer;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.constraint.solver.widgets.ConstraintTableLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.view.View;
@@ -17,6 +18,7 @@ import android.widget.Toast;
 
 import static com.muhammadagung.pertemuan4_drawer.R.id.nav_Order;
 import static com.muhammadagung.pertemuan4_drawer.R.id.nav_beranda;
+import static com.muhammadagung.pertemuan4_drawer.R.id.nav_contact;
 import static com.muhammadagung.pertemuan4_drawer.R.id.nav_makanan;
 import static com.muhammadagung.pertemuan4_drawer.R.id.nav_minuman;
 import static com.muhammadagung.pertemuan4_drawer.R.id.nav_site;
@@ -135,6 +137,10 @@ public class MainActivity extends AppCompatActivity
                 startActivity(intent);
                 break;
 
+            case nav_contact:
+                Intent intent1 = new Intent(MainActivity.this, ContactActivity.class);
+                startActivity(intent1);
+                break;
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

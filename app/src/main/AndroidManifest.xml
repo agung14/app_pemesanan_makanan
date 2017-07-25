@@ -22,19 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".ServerActivity"
             android:label="Setting"
-            android:parentActivityName=".MainActivity">
-
-        </activity>
-
-        <activity android:name=".DetailMenu"
-            android:parentActivityName=".DetailMenu">
-
-        </activity>
-
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".DetailMenu"
+            android:parentActivityName=".DetailMenu"></activity>
+        <activity android:name=".ContactActivity"></activity>
     </application>
 
 </manifest>
